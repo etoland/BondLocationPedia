@@ -1,0 +1,21 @@
+"features": [
+{
+    "properties": 
+  {
+    "location_id": 0001,
+    "bond": "Sean Connery",
+    "film": "Dr. No",
+    "address": "5 Hamilton Pl",
+    "city": "London",
+    "notes":,
+    "coordinates": [51.504400, -0.150510]
+  },
+  {
+      "location_id": 0002,
+      "bond": "Sean Connery",
+      "film": "From Russia with Love",
+      "address": "85 Albert Embankment",
+      "notes":
+  }
+}
+]
