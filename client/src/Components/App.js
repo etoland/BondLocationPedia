@@ -7,7 +7,7 @@ import {
 } from "react-google-maps";
 import * as locationData from "../server/data/filming-locations.json";
 
-function Map() {
+const Map = () => {
   return (
     <GoogleMap
       defaultZoom={10}
@@ -16,11 +16,11 @@ function Map() {
       {locationData}
     </GoogleMap>
   );
-}
+};
 
 const WrappedMap = withScriptjs(withGoogleMap(Map));
 
-function App() {
+const App = () => {
   return (
     <div style={{ width: "100vw", height: "100vh" }}>
       <WrappedMap
@@ -31,6 +31,6 @@ function App() {
       />
     </div>
   );
-}
+};
 
 export default App;
