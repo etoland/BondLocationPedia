@@ -1,13 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import App from "./Components/App";
-import AuthOProviderWithHistory from "./auth0-provider-with-history";
+import { Auth0Provider } from "client/src/Components/Auth0Provider.js";
+import { SignInContext } from "client/src/Components/SignInContext.js";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <AuthOProviderWithHistory>
+  <Auth0Provider>
+    <SignInContext>
       <App />
-    </AuthOProviderWithHistory>
-  </React.StrictMode>,
+    </SignInContext>
+  </Auth0Provider>,
   document.getElementById("root")
 );
