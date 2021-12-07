@@ -7,30 +7,31 @@ import {
   InfoWindow,
 } from "react-google-maps";
 import styled from "styled-components";
+import properties from "../Data/filming-locations";
 import MapStyles from "./Styles/MapStyles";
-
-const [selectLocation, setSelectLocation] = useState(null);
+import Logo from "../Assests/007Logo.png";
 
 const Map = () => {
+  const [selectLocation, setSelectLocation] = useState(null);
   return (
     <GoogleMap
       defaultZoom={10}
       defaultCenter={{ lat: 51.509865, lng: -0.118092 }}
       defaultOptions={{ styles: MapStyles }}
     >
-      {locationData.properties.map((location) => (
+      {properties?.map((location) => (
         <Marker
-          key={location.properties.location_id}
+          key={location.location_id}
           position={{
-            lat: location.properties.coordinates[0],
-            lng: location.properties.coordinates[1],
+            lat: location.coordinates[0],
+            lng: location.coordinates[1],
           }}
           onClick={() => {
             setSelectLocation(location);
           }}
           icon={{
-            url: "../007Logo.png",
-            scaledSize: new window.google.maps.Size(25, 25),
+            url: Logo,
+            scaledSize: new window.google.maps.Size(40, 25),
           }}
         />
       ))}

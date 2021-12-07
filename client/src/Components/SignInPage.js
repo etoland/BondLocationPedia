@@ -1,6 +1,7 @@
 import React, { useContext, useState, useEffect } from "react";
 import { SignInContext } from "./SignInContext";
 import { useAuth0 } from "@auth0/auth0-react";
+import SignInButton from "./SignInButton";
 
 const SignInPage = () => {
   const { signIn, setSignIn } = useContext(SignInContext);
@@ -9,8 +10,8 @@ const SignInPage = () => {
   useEffect(() => {
     if (isAuthenticated) {
       setSignIn({
-        firstName: user.firstName,
-        lastName: user.lastName,
+        firstName: user?.given_name,
+        lastName: user.family_name,
         email: user.email,
       });
     }

@@ -1,23 +1,22 @@
 import React from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
-import GlobalStyles from "../GlobalStyles";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import GlobalStyle from "./Components/Styles/GlobalStyles";
 import SignInPage from "./SignInPage";
 import Home from "./Home";
+import { useAuth0 } from "@auth0/auth0-react";
 
 const App = () => {
+  const { user } = useAuth0();
+  console.log(user);
   return (
     <>
-      <GlobalStyles />
-      <div>
-        <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-          <Route path="/sign-in-page">
-            <SignInPage />
-          </Route>
-        </Switch>
-      </div>
+      {/* <GlobalStyle /> */}
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/sign-in-page" element={<SignInPage />} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 };

@@ -1,6 +1,6 @@
 import React, { createContext, useState, useEffect } from "react";
 
-export const SignInContext = createContext();
+export const SignInContext = createContext(null);
 
 export const SignInContextProvider = ({ children }) => {
   const [signIn, setSignIn] = useState([]);
