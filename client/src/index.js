@@ -12,8 +12,8 @@ const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID;
 
 ReactDOM.render(
   <Auth0Provider
-    domain={"dev-my-xwmn3.us.auth0.com"}
-    clientId={"FW1wnegWP17DRrX1FFW6yGQujpCgHZ1H"}
+    domain={domain}
+    clientId={clientId}
     redirectUri={window.location.origin}
     // onRedirectCallBack={onRedirectCallBack}
   >

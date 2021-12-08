@@ -13,6 +13,7 @@ import Logo from "../Assests/007Logo.png";
 
 const Map = () => {
   const [selectLocation, setSelectLocation] = useState(null);
+  console.log(selectLocation, "Bond");
   return (
     <GoogleMap
       defaultZoom={10}
@@ -31,22 +32,24 @@ const Map = () => {
           }}
           icon={{
             url: Logo,
-            scaledSize: new window.google.maps.Size(40, 25),
+            scaledSize: new window.google.maps.Size(60, 25),
           }}
         />
       ))}
       {selectLocation && (
         <InfoWindow
           position={{
-            lat: selectLocation.properties.coordinates[0],
-            lng: selectLocation.properties.coordinates[1],
+            lat: selectLocation.coordinates[0],
+            lng: selectLocation.coordinates[1],
           }}
           onCloseClick={() => {
             setSelectLocation(null);
           }}
         >
-          <H2>{selectLocation.properties.address}</H2>
-          <H3>{selectLocation.properties.name}</H3>
+          <div>
+            <H2>{selectLocation.address}</H2>
+            <H3>{selectLocation.name}</H3>
+          </div>
         </InfoWindow>
       )}
     </GoogleMap>
