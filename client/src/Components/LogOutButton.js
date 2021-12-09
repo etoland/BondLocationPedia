@@ -21,7 +21,6 @@ const StyledButton = styled.button`
   font-weight: 700;
   font-size: 20px;
   color: var(--ghostWhite);
-  padding: 45px;
   cursor: pointer;
 `;
 export default LogoutButton;

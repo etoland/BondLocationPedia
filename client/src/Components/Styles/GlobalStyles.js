@@ -45,7 +45,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
-  background-color: #f1f7ee;
+  background-color: white;
 }
 ol, ul {
 	list-style: none;
@@ -67,8 +67,8 @@ h2,
 h3,
 label,
 button {
-  background-color: #3f612d;
-  color: white;
+  background-color: white;
+  color: black;
   font-family: var(--font-heading);
   font-size: 32px;
   text-align: center;

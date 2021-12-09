@@ -4,7 +4,6 @@ import GlobalStyle from "./Styles/GlobalStyles";
 import SignInPage from "./SignInPage";
 import Home from "./NavBar/Home";
 import { useAuth0 } from "@auth0/auth0-react";
-import Sidebar from "./Sidebar";
 import Map from "./NavBar/Map";
 import Bookmarks from "./NavBar/Bookmarks";
 import AboutUs from "./NavBar/AboutUs";
