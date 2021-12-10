@@ -100,6 +100,7 @@ const P5 = styled.p`
 `;
 
 const Img = styled.img`
+  display: flex;
   z-index: 0;
   padding-left: 400px;
   padding-top: 100px;
@@ -107,6 +108,7 @@ const Img = styled.img`
 `;
 
 const ImgTwo = styled.img`
+  display: flex;
   position: absolute;
   padding-left: 200px;
   align-items: center;

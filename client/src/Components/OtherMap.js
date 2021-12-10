@@ -9,7 +9,8 @@ import {
 import styled from "styled-components";
 import properties from "../Data/filming-locations";
 import MapStyles from "./Styles/MapStyles";
-import Logo from "../Assests/007Logo.png";
+import Logo from "../Assets/007Logo.png";
+import { BiCameraMovie } from "react-icons/bi";
 
 const Map = () => {
   const [selectLocation, setSelectLocation] = useState(null);
@@ -47,8 +48,15 @@ const Map = () => {
           }}
         >
           <div>
-            <H2>{selectLocation.address}</H2>
+            <H2>Address: {selectLocation.address}</H2>
             <H3>{selectLocation.name}</H3>
+            <H4>
+              <BiCameraMovie /> Film: {selectLocation.film}
+            </H4>
+            <H5>Bond: {selectLocation.bond}</H5>
+            <H6>Scene: {selectLocation.info}</H6>
+            <H7 src={selectLocation.media[0].url} />
+            {/* <H7 src={"../Assets/mi6.png"} /> */}
           </div>
         </InfoWindow>
       )}
@@ -72,8 +80,22 @@ const OtherMap = () => {
   );
 };
 
-const H2 = styled.h2``;
+const H2 = styled.p`
+  font-size: 25px;
+`;
 
-const H3 = styled.h3``;
+const H3 = styled.p`
+  font-size: 20px;
+`;
+
+const H4 = styled.p``;
+
+const H5 = styled.p``;
+
+const H6 = styled.p`
+  font-size: 13px;
+`;
+
+const H7 = styled.img``;
 
 export default OtherMap;

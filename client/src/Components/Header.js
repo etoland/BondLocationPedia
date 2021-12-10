@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 import { Link, NavLink } from "react-router-dom";
-import HeaderLogo from "../Assests/HeaderLogo.png";
-import gun from "../Assests/gun.png";
+import HeaderLogo from "../Assets/HeaderLogo.png";
+import gun from "../Assets/gun.png";
 import LogOutButton from "./LogOutButton";
 import { useAuth0 } from "@auth0/auth0-react";
 import SignInButton from "./SignInButton";
@@ -21,7 +21,7 @@ const Header = () => {
           </StyledLink>
         </div>
         <div>
-          <StyledNavLink to="/about-us">Home</StyledNavLink>
+          <StyledNavLink to="/">Home</StyledNavLink>
           <StyledNavLink to="/homefeed">Feed</StyledNavLink>
           <StyledNavLink to="/map">Map</StyledNavLink>
         </div>
@@ -78,6 +78,7 @@ const H1 = styled.h1`
 `;
 
 const OtherLogo = styled.img`
+  display: flex;
   width: 100px;
   position: relative;
   right: 600px;

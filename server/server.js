@@ -1,15 +1,26 @@
 const path = require("path");
 const express = require("express");
+const morgan = require("morgan");
+
+require("dotenv").config();
+
+const { addNewUser, getUserByEmail } = require("./Handlers/userHandler");
 
 const PORT = 1000;
 
-express()
-  .use(express.json())
+const app = express();
 
-  .get("/hello", (req, res) => {
-    res.status(200).json({ hi: "hi" });
-  })
+app.use(express.json());
+app.use(morgan("dev"));
+app.use(express.static("assets"));
 
-  .listen(PORT, function () {
-    console.info("🌍 Listening on port " + PORT);
-  });
+app.post("/create-user", addNewUser);
+app.get("/profile/:email", getUserByEmail);
+
+app.get("/hello", (req, res) => {
+  res.status(200).json({ hi: "hi" });
+});
+
+app.listen(PORT, function () {
+  console.info("🌍 Listening on port " + PORT);
+});

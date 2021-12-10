@@ -22,10 +22,10 @@ const App = () => {
         <Route path="/homefeed" element={<Homefeed />} />
         <Route path="/sign-in-page" element={<SignInPage />} />
         <Route path="/map" element={<Map />} />
-        <Route path="bookmarks" element={<Bookmarks />} />
-        <Route path="about-us" element={<AboutUs />} />
-        <Route path="villain-quiz" element={<VillainQuiz />} />
-        <Route path="Profile" element={<Profile />} />
+        <Route path="/bookmarks" element={<Bookmarks />} />
+        <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/villain-quiz" element={<VillainQuiz />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
     </BrowserRouter>
   );

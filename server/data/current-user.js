@@ -1,10 +1,10 @@
-const users = {
+const usernames = {
   craigcrazy: {
     handle: "craigcrazy",
     displayName: "Daniel Craig's Wide",
     avatarSrc: "/assets/craigcrazy.png",
     bannerSrc: "/assets/craigcrazybanner.png",
-    location: "Wherever Danie Craig currently is",
+    location: "Wherever Daniel Craig currently is",
     joined: "2013-02-02T12:00",
     bio: "Always on the lookout for anything Daniel Craig related in London!! Hoping to meet him in 2022!! #keepaneyeoutforselener #notastalker",
     followingIds: ["bondbaddie"],
@@ -39,8 +39,7 @@ const users = {
 
 const posts = {
   "1209791721099411456r1": {
-    id: "1209791721099411456r1",
-    authorHandle: "agent007",
+    email: "etoland007@gmail.com",
     timestamp: "2021-10-19T09:14:00+00:00",
     sortedTimestamp: "2021-10-19T09:14:00+00:00",
     retweetOf: "1212689921057665024",
@@ -48,8 +47,7 @@ const posts = {
     retweetedBy: [],
   },
   "1212689921057665024": {
-    id: "1212689921057665024",
-    authorHandle: "craigcrazy",
+    email: "emma.mandat-toland@mail.mcgill.ca",
     timestamp: "2021-12-12T09:14:00+00:00",
     sortedTimestamp: "2021-12-12T09:14:00+00:00",
     likedBy: [],
@@ -65,6 +63,6 @@ const posts = {
   },
 };
 module.exports = {
-  users,
+  usernames,
   posts,
 };

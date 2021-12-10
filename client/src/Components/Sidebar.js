@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 import OtherMap from "./OtherMap";
@@ -13,11 +13,34 @@ import { BsPinMapFill } from "react-icons/bs";
 import { useAuth0 } from "@auth0/auth0-react";
 import LogOutButton from "./LogOutButton";
 import SignInButton from "./SignInButton";
-import Logo from "../Assests/007Logo.png";
-import Background from "../Assests/Background.png";
+import Logo from "../Assets/007Logo.png";
+import Background from "../Assets/Background.png";
 
 const Sidebar = () => {
-  const { isAuthenticated, loginWithRedirect } = useAuth0();
+  const { isAuthenticated, loginWithRedirect, logout, user } = useAuth0();
+  console.log(user, "pizza");
+  useEffect(() => {
+    if (isAuthenticated) {
+      fetch("/create-user", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          _id: user.email,
+          name: user.name,
+          role: "client",
+        }),
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          console.log(data);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    }
+  }, [user]);
   return (
     <Div>
       <OtherImg src={Background} />

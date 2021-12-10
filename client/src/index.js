@@ -6,6 +6,9 @@ import {
   SignInContext,
   SignInContextProvider,
 } from "./Components/SignInContext";
+import CurrentUserContext, {
+  CurrentUserProvider,
+} from "./Components/CurrentUserContext";
 
 const domain = process.env.REACT_APP_AUTH0_DOMAIN;
 const clientId = process.env.REACT_APP_AUTH0_CLIENT_ID;
@@ -18,7 +21,9 @@ ReactDOM.render(
     // onRedirectCallBack={onRedirectCallBack}
   >
     <SignInContextProvider>
-      <App />
+      <CurrentUserProvider>
+        <App />
+      </CurrentUserProvider>
     </SignInContextProvider>
   </Auth0Provider>,
   document.getElementById("root")
