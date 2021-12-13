@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 import OtherMap from "./OtherMap";
@@ -15,9 +15,11 @@ import LogOutButton from "./LogOutButton";
 import SignInButton from "./SignInButton";
 import Logo from "../Assets/007Logo.png";
 import Background from "../Assets/Background.png";
+import CurrentUserContext from "./CurrentUserContext";
 
 const Sidebar = () => {
   const { isAuthenticated, loginWithRedirect, logout, user } = useAuth0();
+  const { currentUser } = useContext(CurrentUserContext);
   console.log(user, "pizza");
   useEffect(() => {
     if (isAuthenticated) {
@@ -70,15 +72,15 @@ const Sidebar = () => {
           <NavigationLink to="/homefeed">
             <GiPistolGun /> {"\u00a0"}Shoot off a message
           </NavigationLink>
-          {isAuthenticated ? (
-            <NavigationLink to={"/profile"}>
+          {isAuthenticated && currentUser ? (
+            <NavigationLink to={`/profile/${currentUser.name}`}>
               <GiPlagueDoctorProfile />
               {"\u00a0"}
               Profile
             </NavigationLink>
           ) : null}
           <Zindex>
-            {isAuthenticated ? (
+            {isAuthenticated && currentUser ? (
               <LogOutButton />
             ) : (
               <SignInButton onClick={() => loginWithRedirect()}>

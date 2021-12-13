@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import GlobalStyle from "./Styles/GlobalStyles";
 import SignInPage from "./SignInPage";
@@ -10,9 +10,12 @@ import AboutUs from "./NavBar/AboutUs";
 import VillainQuiz from "./NavBar/VillainQuiz";
 import Profile from "./NavBar/Profile";
 import Homefeed from "./NavBar/Homefeed";
+import CurrentUserContext from "./CurrentUserContext";
 
 const App = () => {
   const { user } = useAuth0();
+  const { currentUser } = useContext(CurrentUserContext);
+  console.log(currentUser, "food");
   console.log(user);
   return (
     <BrowserRouter>
@@ -25,7 +28,7 @@ const App = () => {
         <Route path="/bookmarks" element={<Bookmarks />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/villain-quiz" element={<VillainQuiz />} />
-        <Route path="/profile" element={<Profile />} />
+        <Route path={`/profile/:email`} element={<Profile />} />
       </Routes>
     </BrowserRouter>
   );

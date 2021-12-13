@@ -61,7 +61,7 @@ const bondInfo = async () => {
       {
         $set: {
           handle: "craigcrazy",
-          displayName: "Daniel Craig's Wide",
+          displayName: "Daniel Craig's Wife",
           avatarSrc: "/assets/craigcrazy.png",
           bannerSrc: "/assets/craigcrazybanner.png",
           location: "Wherever Daniel Craig currently is",

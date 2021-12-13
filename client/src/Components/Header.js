@@ -78,10 +78,10 @@ const H1 = styled.h1`
 `;
 
 const OtherLogo = styled.img`
-  display: flex;
   width: 100px;
-  position: relative;
-  right: 600px;
+  position: absolute;
+  top: 0%;
+  left: 26%;
 `;
 
 export default Header;

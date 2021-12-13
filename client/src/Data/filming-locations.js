@@ -11,7 +11,7 @@ const properties = [
     media: [
       {
         type: "img",
-        url: "./Assets/casino.png",
+        url: "https://res.cloudinary.com/emma-mandat-toland/image/upload/v1639424806/01_twlwjj.jpg",
       },
     ],
   },
@@ -27,7 +27,7 @@ const properties = [
     media: [
       {
         type: "img",
-        url: "./Assets/mi6.png",
+        url: "https://res.cloudinary.com/emma-mandat-toland/image/upload/v1639425874/MI6_under_attack__Skyfall_goqirt.png",
       },
     ],
   },
@@ -43,7 +43,7 @@ const properties = [
     media: [
       {
         type: "img",
-        url: "./Assets/college.png",
+        url: "https://res.cloudinary.com/emma-mandat-toland/image/upload/v1639426671/College_of_arms_fvdpn8.jpg",
       },
     ],
   },
@@ -59,7 +59,7 @@ const properties = [
     media: [
       {
         type: "img",
-        url: "./Assets/langham.png",
+        url: "https://res.cloudinary.com/emma-mandat-toland/image/upload/v1639426833/Langham_llkofa.jpg",
       },
     ],
   },
@@ -75,7 +75,7 @@ const properties = [
     media: [
       {
         type: "img",
-        url: "./Assets/brompton.png",
+        url: "https://res.cloudinary.com/emma-mandat-toland/image/upload/v1639426869/710_03_GoldenEye_BromptonCemetery_01_dvzlv2.jpg",
       },
     ],
   },
@@ -91,7 +91,7 @@ const properties = [
     media: [
       {
         type: "img",
-        url: "./Assets/reform.png",
+        url: "https://res.cloudinary.com/emma-mandat-toland/image/upload/v1639426928/tr039-reform-club-london-james-bond-2_zt7je3.jpg",
       },
     ],
   },
@@ -102,12 +102,12 @@ const properties = [
     address: "Trafalgar Square",
     city: "London",
     name: "The National Gallery",
-    info: "This is one of our favourite locations, as you can sit on the actual bench which Q and Bond did!",
+    info: "This is one of our favourite locations, as you can sit on the actual bench which Q and Bond did! The room is called The Sackler Room - in which you will find works by Turner and other British Classics",
     coordinates: [51.50885772705078, -0.12908935546875],
     media: [
       {
         type: "img",
-        url: "./Assets/national.png",
+        url: "https://res.cloudinary.com/emma-mandat-toland/image/upload/v1639426979/Turner_Bond_and_Q_yj5j4q.jpg",
       },
     ],
   },
@@ -123,7 +123,7 @@ const properties = [
     media: [
       {
         type: "img",
-        url: "./Assets/rules.png",
+        url: "https://res.cloudinary.com/emma-mandat-toland/image/upload/v1639427092/rules_spectre_fwfzh4.jpg",
       },
     ],
   },
@@ -139,7 +139,7 @@ const properties = [
     media: [
       {
         type: "img",
-        url: "./Assets/embankment.png",
+        url: "https://res.cloudinary.com/emma-mandat-toland/image/upload/v1639427162/Embankment_skyfall_asrjtp.jpg",
       },
     ],
   },
@@ -155,7 +155,7 @@ const properties = [
     media: [
       {
         type: "img",
-        url: "./Assets/westminster.png",
+        url: "https://res.cloudinary.com/emma-mandat-toland/image/upload/v1639427261/DSC04435_zyclk5.jpg",
       },
     ],
   },

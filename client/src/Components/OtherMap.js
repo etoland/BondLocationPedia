@@ -48,15 +48,15 @@ const Map = () => {
           }}
         >
           <div>
-            <H2>Address: {selectLocation.address}</H2>
             <H3>{selectLocation.name}</H3>
+            <H2>Address: {selectLocation.address}</H2>
             <H4>
-              <BiCameraMovie /> Film: {selectLocation.film}
+              <BiCameraMovie />
+              Film: {selectLocation.film}
             </H4>
             <H5>Bond: {selectLocation.bond}</H5>
             <H6>Scene: {selectLocation.info}</H6>
             <H7 src={selectLocation.media[0].url} />
-            {/* <H7 src={"../Assets/mi6.png"} /> */}
           </div>
         </InfoWindow>
       )}
@@ -80,12 +80,20 @@ const OtherMap = () => {
   );
 };
 
+const H = styled.p`
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+`;
+
 const H2 = styled.p`
-  font-size: 25px;
+  font-size: 20px;
 `;
 
 const H3 = styled.p`
-  font-size: 20px;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
 `;
 
 const H4 = styled.p``;
@@ -96,6 +104,9 @@ const H6 = styled.p`
   font-size: 13px;
 `;
 
-const H7 = styled.img``;
+const H7 = styled.img`
+  width: 630px;
+  height: 375px;
+`;
 
 export default OtherMap;
