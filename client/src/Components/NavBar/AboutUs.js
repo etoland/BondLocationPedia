@@ -13,8 +13,9 @@ const AboutUs = () => {
       <Wrapper>
         <H1>About Us</H1>
         <P>
-          Here at Bond Voyage we believe that the life of James Bond is not just
-          a 3 hour action packed thriller - but rather a lifelong journey.
+          Here at <BOND> Bond Voyage </BOND> we believe that the life of James
+          Bond is not just a 3 hour action packed thriller - but rather a
+          lifelong journey.
         </P>
         <P2>
           We are here to help guide you on that voyage, pinpoint your
@@ -48,6 +49,11 @@ const AboutUs = () => {
   );
 };
 
+const BOND = styled.p`
+  font-weight: bolder;
+  font-size: large;
+  padding: 5px;
+`;
 const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -56,7 +62,7 @@ const Wrapper = styled.div`
 const H1 = styled.h1`
   font-family: "Playfair Display", serif;
   font-weight: bold;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   justify-content: center;
   text-align: center;
 `;

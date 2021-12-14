@@ -9,21 +9,22 @@ const Homefeed = () => {
   const [newFeed, setNewsFeed] = useState(false);
   const { currentUser } = useContext(CurrrentUserContext);
 
-  // return (
-  //   <div>
-  //     <Header />
-  //     <Wrapper>
-  //       <H1>007 Feed</H1>
-  //       {!newFeed ? (
-  //         <CircularLoad>
-  //           <CircularProgress />
-  //           Loading
-  //           </CircularLoad>
-  //       ) : (
-  //       )}
-  //     </Wrapper>
-  //   </div>
-  // );
+  return (
+    <div>
+      {/* <Header />
+      <Wrapper>
+        <H1>007 Feed</H1>
+        {!newFeed ? (
+          <CircularLoad>
+            <CircularProgress />
+            Loading
+            </CircularLoad>
+        ) : (
+
+        )}
+      </Wrapper> */}
+    </div>
+  );
 };
 
 const H1 = styled.h1``;
