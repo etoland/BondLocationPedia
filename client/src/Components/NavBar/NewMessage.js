@@ -23,6 +23,7 @@ const NewMessage = ({ setUpdateFeed, updateFeed }) => {
         email: currentUser.name,
         displayName: currentUser.handle,
         displayUser: currentUser.avatarSrc,
+        displayMedia: [],
       }),
       headers: {
         "Content-Type": "application/json",

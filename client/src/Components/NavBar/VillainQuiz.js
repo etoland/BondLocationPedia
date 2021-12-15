@@ -70,7 +70,7 @@ const VillainQuiz = () => {
                         />
                       </Pics>
                       <P1>
-                        <PointText>10-15 Points: Marco Sciarra</PointText> Sorry
+                        <PointText>15-20 Points: Marco Sciarra</PointText> Sorry
                         but just like this wannabe Bond villain... you just
                         arent memorable. Seen in the movie Spectre, Marco is
                         chased around the Mexican Day of the Dead celebration by
@@ -78,14 +78,14 @@ const VillainQuiz = () => {
                         immediate death.{" "}
                       </P1>
                       <P2>
-                        <PointText>15-20 Points: Mr. White</PointText> Like this
+                        <PointText>20-30 Points: Mr. White</PointText> Like this
                         reappearing Bond character and Spectre member, you use
                         your intelligence and connections to get by - however in
                         the end you still cant make it past the ways of Mr. Bond
                       </P2>
                       <P3>
                         <PointText>
-                          20-25 Points: Ernst Stavro Blofeld
+                          30-45 Points: Ernst Stavro Blofeld
                         </PointText>
                         You're so evil they wanted you in multiple Bond
                         franchises! Others should beware... You arent one to be

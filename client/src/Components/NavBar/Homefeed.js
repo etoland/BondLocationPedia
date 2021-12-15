@@ -48,7 +48,7 @@ const Homefeed = () => {
         <Background>
           <Img
             src={
-              "https://res.cloudinary.com/emma-mandat-toland/image/upload/v1639602362/james-bond-film-series-firearm-logo-gun-png-favpng-c81nkENpkweyR9D6TfrAnWG24-removebg-preview_odu0yl.png"
+              "https://res.cloudinary.com/emma-mandat-toland/image/upload/v1639602826/8575febf4f936280d67b2ec8f7e23f5e--james-bond-cake-james-bond-party-removebg-preview_zxr0i9.png"
             }
           />
           <Div>

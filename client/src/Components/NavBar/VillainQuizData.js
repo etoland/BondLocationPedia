@@ -119,6 +119,58 @@ const questions = [
       },
     ],
   },
+  {
+    questionText: "How would you describe yourself?",
+    answerOptions: [
+      {
+        answerText: "Pretty chill, but also socially outgoing",
+        value: 2,
+      },
+      {
+        answerText: "I leave the house... occasionally",
+        value: 3,
+      },
+      {
+        answerText: "I have one friend, yeah and its my hairless cat",
+        value: 5,
+      },
+    ],
+  },
+  {
+    questionText: "What is your ideal pet?",
+    answerOptions: [
+      {
+        answerText:
+          "A dog, theyre such good company and they love going for walks",
+        value: 2,
+      },
+      {
+        answerText: "Ive always wanted a rat!",
+        value: 3,
+      },
+      {
+        answerText: "A stray rescue... like me",
+        value: 5,
+      },
+    ],
+  },
+  {
+    questionText: "What do you spend money on most?",
+    answerOptions: [
+      {
+        answerText: "Im a simple person, just the basics",
+        value: 2,
+      },
+      {
+        answerText: "I love a nice clean cut wardrobe",
+        value: 3,
+      },
+      {
+        answerText: "Everything is custom... it adds up alright",
+        value: 5,
+      },
+    ],
+  },
 ];
 
 export default questions;
