@@ -4,7 +4,12 @@ const morgan = require("morgan");
 
 require("dotenv").config();
 
-const { addNewUser, getUserByEmail } = require("./Handlers/userHandler");
+const {
+  addNewUser,
+  getUserByEmail,
+  getPostInfo,
+  postNewMessage,
+} = require("./Handlers/userHandler");
 
 const PORT = 1000;
 
@@ -16,6 +21,8 @@ app.use(express.static("assets"));
 
 app.post("/create-user", addNewUser);
 app.get("/profile/:email", getUserByEmail);
+app.get("/home-feed", getPostInfo);
+app.post("/message", postNewMessage);
 
 app.get("/hello", (req, res) => {
   res.status(200).json({ hi: "hi" });

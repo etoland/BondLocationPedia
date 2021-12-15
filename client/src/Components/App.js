@@ -13,10 +13,11 @@ import Homefeed from "./NavBar/Homefeed";
 import CurrentUserContext from "./CurrentUserContext";
 
 const App = () => {
-  const { user } = useAuth0();
+  const { user, isAuthenticated } = useAuth0();
   const { currentUser } = useContext(CurrentUserContext);
   console.log(currentUser, "food");
-  console.log(user);
+  console.log(isAuthenticated, "cherries");
+
   return (
     <BrowserRouter>
       <GlobalStyle />
